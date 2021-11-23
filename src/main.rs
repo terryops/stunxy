@@ -294,7 +294,7 @@ fn main() {
     let server_addr = SocketAddr::new(server, flags.port);
     match lib::nat_test(&rw, server_addr) {
         Ok(ref result) => {
-            println!("Local Address : {}", result.local_addr());
+            // println!("Local Address : {}", result.local_addr());
             if let Some(addr) = result.remote_addr() {
                 println!("Remote Address: {}", addr);
             }
